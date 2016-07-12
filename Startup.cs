@@ -1,5 +1,4 @@
 using System;
-using AzureDemo2.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -34,7 +33,6 @@ namespace Azure_Demo_2
             services.AddSingleton(provider => Configuration);
             services.AddSingleton<ITodoRepository, TodoRepository>();
             services.AddEntityFrameworkSqlite()
-                    .AddDbContext<ContactContext>()
                     .AddDbContext<ToDoContext>();
         }
 
