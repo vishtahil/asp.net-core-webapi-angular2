@@ -1,5 +1,5 @@
 ///<reference path="./../typings/globals/core-js/index.d.ts"/>
 import {bootstrap}    from '@angular/platform-browser-dynamic';
-import {AppComponent} from './app';
+import {AppComponent} from './app.component';
  
 bootstrap(AppComponent);
