@@ -52,7 +52,11 @@
       "Views",
       "Areas/**/Views",
       "appsettings.json",
-      "web.config"
+      "web.config",
+      "package.json",
+      "gulpfile.js",
+      ".deployment",
+      "deploy.cmd"
     ]
   },
 
