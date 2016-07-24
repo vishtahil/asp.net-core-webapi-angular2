@@ -2,7 +2,7 @@ var ts = require('gulp-typescript');
 var gulp = require('gulp');
 var clean = require('gulp-clean');
 
-var destPath = './wwwroot/libs/';
+var destPath = './wwwroot/';
 
 // Delete the dist directory
 gulp.task('clean', function () {
@@ -44,4 +44,6 @@ gulp.task('watch.ts', ['ts'], function () {
     return gulp.watch('scripts/*.ts', ['ts']);
 });
 
-gulp.task('default', ['systemjs','scriptsNStyles', 'watch']);
+gulp.task('default', ['systemjs', 'scriptsNStyles', 'watch']);
+
+gulp.task('dev-rel', ['systemjs', 'scriptsNStyles']);

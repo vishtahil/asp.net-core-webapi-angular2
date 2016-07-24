@@ -49,6 +49,9 @@
   "publishOptions": {
     "include": [
       "wwwroot",
+      "Views",
+      "Areas/**/Views",
+      "appsettings.json",
       "web.config"
     ]
   },
@@ -56,8 +59,8 @@
   "scripts": {
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ],
     "first-run": "npm install -g gulp && npm run update",
-    "prepare": [ "npm install --save && gulp default" ],
-    "prepublish": [ "npm install", "gulp default" ],
+    "prepare": [ "npm install --save && gulp dev-rel" ],
+    "prepublish": [ "npm install", "gulp dev-rel" ],
     "update": "npm install && npm prune"
   },
 
