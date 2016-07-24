@@ -37,7 +37,7 @@ namespace Azure_Demo_2
         }
 
         public void ConfigureRoute(IRouteBuilder routeBuilder){
-            routeBuilder.MapRoute("Default","{controller=Contact}/{action=Index}/{id?}");
+            routeBuilder.MapRoute("Default","{controller=Home}/{action=Index}/{id?}");
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
